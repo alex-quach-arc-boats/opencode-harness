@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "primary",
+  "subagent_depth": 1,
+  "agent": {
+    "build": {
+      "disable": true
+    },
+    "plan": {
+      "disable": true
+    },
+    "general": {
+      "disable": true
+    },
+    "explore": {
+      "disable": true
+    },
+    "councillor": {
+      "disable": true
+    },
+    "designer": {
+      "disable": true
+    },
+    "explorer": {
+      "disable": true
+    },
+    "fixer": {
+      "disable": true
+    },
+    "librarian": {
+      "disable": true
+    },
+    "oracle": {
+      "disable": true
+    },
+    "orchestrator": {
+      "disable": true
+    }
+  }
+}
