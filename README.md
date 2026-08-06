@@ -6,7 +6,7 @@ An [opencode](https://opencode.ai) agent harness. It disables the built-in agent
 
 - `primary` on `opencode/glm-5.2` is a balance of fast and smart, orchestrating and delegating to subagents.
 - `deep-thinker` on `opencode/claude-opus-5` gives slow, complex analysis.
-- `doer` on `opencode/glm-5.2` implements one accepted bounded task.
+- `doer` on `opencode/glm-5.2` implements one clearly bounded task.
 - `reviewer` on `opencode/gpt-5.6-terra` reviews changes.
 
 ## Motivation
