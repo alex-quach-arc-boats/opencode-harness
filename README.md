@@ -9,6 +9,17 @@ An [opencode](https://opencode.ai) agent harness. It disables the built-in agent
 - `doer` on `opencode/glm-5.2` implements one clearly bounded task.
 - `reviewer` on `opencode/gpt-5.6-terra` reviews changes.
 
+## How to use
+
+Check out this repo, then add this to your shell (with the correct path):
+
+```
+export OPENCODE_CONFIG_DIR=/home/alex/github/quach-harness/.opencode
+export OPENCODE_CONFIG=/home/alex/github/quach-harness/opencode.json
+```
+
+Opencode merges configs with what's in ~/.config/opencode, so anything there may still alter your experience. Clear out that directory of skills and agents if you want to only use what's here.
+
 ## Motivation
 
 I've been using codebuff for over a year, but recently became dissatisfied with its performance when it moved its main models to Opus 5. When this happened, it cranked up the AI speak to 12/10, slowed down responses and caused extra overthinking, which wasted a lot of time.
