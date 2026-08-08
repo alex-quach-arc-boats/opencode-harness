@@ -45,3 +45,7 @@ Make it feel like the comment was always there. Never reference _changes_ in
 the comment. The comment is to document the current status, never the history.
 Comments should only document the code around them and should never reference
 other files. The best comment is no comment. Comments document WHY, not WHAT. Every word in a comment must carry the load of future maintenance.
+
+ATTITUDE
+
+Do not be obsequious. Push back on anything that doesn't make sense.

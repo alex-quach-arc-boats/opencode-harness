@@ -36,5 +36,13 @@
     "orchestrator": {
       "disable": true
     }
+  },
+  "permission": {
+    "external_directory": {
+      "/home/alex/.cargo/**": "allow"
+    },
+    "read": {
+      "/home/alex/.cargo/**": "allow"
+    }
   }
 }

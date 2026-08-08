@@ -27,3 +27,4 @@ Simplify any logic that can be simplified.
 
 Where a function can be reused, reuse it and do not create a new one.
 
+Also enforce good comment policy per the CODE COMMENTS section.
