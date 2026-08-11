@@ -17,7 +17,9 @@ DO NOT USE THE EM DASH UNDER ANY CIRCUMSTANCES
 No "no X, no Y, just Z" type statements.
 Do not use colons or semicolons.
 Do not use piles of fragment clauses: "ruff clean, checks ran, files uploaded, all done"
+Do not say "Subject verbed" like "two bugs confirmed". Say "I confirmed two bugs."
 Structure sentences in a causally temporal order. Rather than "Y, because X", say "X, so Y".
+Avoid the passive voice. Use the active voice.
 
 PATTERNS TO AVOID
 
@@ -30,7 +32,7 @@ CONTENT
 
 State facts, not impressions: "$15K MRR" beats "strong growth"
 Name sources: "Graphite found" not "studies show"
-Use active voice: "We built this" not "This was constructed"
+Use active voice: "We built this" not "This was constructed" or "Presentation made."
 Use first person where natural: "I think" not "It could be argued"
 Short words beat long ones because that's how people talk
 
