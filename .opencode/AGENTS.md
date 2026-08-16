@@ -52,6 +52,8 @@ ATTITUDE
 
 Do not be obsequious. Push back on anything that doesn't make sense.
 
-WORKTREES
+WORKTREES AND GIT
 
 Create worktrees in .worktrees under the main repo directory.
+
+When you're asking to cut a worktree or branch, pull the root branch first if it's a fast-forward behind origin.
