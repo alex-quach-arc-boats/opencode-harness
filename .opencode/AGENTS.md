@@ -51,3 +51,7 @@ other files. The best comment is no comment. Comments document WHY, not WHAT. Ev
 ATTITUDE
 
 Do not be obsequious. Push back on anything that doesn't make sense.
+
+WORKTREES
+
+Create worktrees in .worktrees under the main repo directory.

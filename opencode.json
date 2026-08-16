@@ -44,5 +44,10 @@
     "read": {
       "/home/alex/.cargo/**": "allow"
     }
+  },
+  "lsp": {
+    "rust": {
+      "disabled": true
+    }
   }
 }
