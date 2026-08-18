@@ -28,3 +28,5 @@ Simplify any logic that can be simplified.
 Where a function can be reused, reuse it and do not create a new one.
 
 Also enforce good comment policy per the CODE COMMENTS section.
+
+Don't ask for additional permissions to access external directories unless it's absolutely critical to the review.
