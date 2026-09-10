@@ -4,9 +4,10 @@ mode: subagent
 model: opencode/gpt-5.6-terra
 permission:
   bash:
-    "*": deny
-    "git status": allow
-    "git diff": allow
+    "git *": deny
+    "git status *": allow
+    "git diff *": allow
+    "*: deny
   edit: deny
   task: deny
 ---
