@@ -5,9 +5,10 @@ model: opencode/gpt-5.6-terra
 permission:
   bash:
     "git *": deny
-    "git status *": allow
-    "git diff *": allow
-    "*: deny
+    "git status*": allow
+    "git diff*": allow
+    "git log*": allow
+    "*": deny
   edit: deny
   task: deny
 ---

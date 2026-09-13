@@ -5,8 +5,9 @@ model: opencode/claude-opus-5
 permission:
   bash:
     "*": deny
-    "git status": allow
-    "git diff": allow
+    "git status*": allow
+    "git diff*": allow
+    "git log*": allow
   edit: deny
   task: deny
 ---
