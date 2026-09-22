@@ -1,7 +1,7 @@
 ---
 description: Provides read-only implementation reviews.
 mode: subagent
-model: opencode/gpt-5.6-terra
+model: opencode/gpt-6-sol
 permission:
   bash:
     "git *": deny

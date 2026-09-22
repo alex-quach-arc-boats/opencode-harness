@@ -4,10 +4,10 @@ An [opencode](https://opencode.ai) agent harness. It disables the built-in agent
 
 ## Agents and models
 
-- `primary` on `opencode/glm-5.2` is a balance of fast and smart, orchestrating and delegating to subagents.
-- `deep-thinker` on `opencode/claude-opus-5` gives slow, complex analysis.
-- `doer` on `opencode/glm-5.2` implements one clearly bounded task.
-- `reviewer` on `opencode/gpt-5.6-terra` reviews changes.
+- `primary` on `opencode-go/gpt-6-luna` orchestrates and delegates to subagents.
+- `deep-thinker` on `opencode/claude-opus-5.5` gives slow, complex analysis.
+- `doer` on `opencode-go/glm-5.3-flash` implements one clearly bounded task.
+- `reviewer` on `opencode/gpt-6-sol` reviews changes.
 
 ## How to use
 
@@ -50,7 +50,7 @@ However, the mindset of needing to come back later for even minor changes does i
 
 ## Summary
 
-* Primary is GLM-5.2 for a nice balance of speed and performance.
-* Delegates to the Deep Thinker Opus 5 for stuff that you actually want to spend a lot of time analyzing.
-* Delegates to the Doer GLM-5.2 to protect the context window.
-* Delegates to the Reviewer GPT-5.6-Terra for a moderately smart review. I skipped Opus because it overthinks review too much, and I also didn't use GLM because having review done by an orthogonal model probably catches more bugs.
+- Primary is GPT-6-Luna for coordination and delegation.
+* Delegates to the Deep Thinker Opus 5.5 for stuff that you actually want to spend a lot of time analyzing.
+* Delegates to the Doer GLM-5.3-Flash to protect the context window.
+* Delegates to the Reviewer GPT-6-Sol for review.
