@@ -1,7 +1,7 @@
 ---
 description: Provides read-only source analysis, decisions, and implementation reviews.
 mode: subagent
-model: opencode/claude-opus-5.5
+model: opencode/claude-opus-5-5
 permission:
   bash:
     "*": deny
