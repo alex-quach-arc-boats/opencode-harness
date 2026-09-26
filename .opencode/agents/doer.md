@@ -1,7 +1,7 @@
 ---
 description: Implements an accepted bounded task and reports focused validation.
 mode: subagent
-model: opencode-go/glm-5.3-flash
+model: isoquant/glm-5.3-flash
 permission:
   task: deny
 ---

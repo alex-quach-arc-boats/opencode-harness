@@ -69,3 +69,8 @@ WORKTREES AND GIT
 Create worktrees in .worktrees under the main repo directory.
 
 When you're asking to cut a worktree or branch, pull the root branch first if it's a fast-forward behind origin.
+
+PATHS
+
+Do not attempt to glob or grep in ~/github. If the user provides a path inside, just start accessing it directly.
+When generating bash commands, avoid generating anything with ../. Prefer an absolute path.
