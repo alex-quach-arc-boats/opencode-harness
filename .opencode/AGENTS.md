@@ -48,7 +48,8 @@ the comment. The comment is to document the current status, never the history.
 Comments should only document the code around them and should never reference
 other files. The best comment is no comment. Comments document WHY, not WHAT.
 Every word in a comment must carry the load of future maintenance. Comments
-must have absurdly high ROI.
+must have absurdly high ROI. Comments should never explain what the code is
+doing, only WHY.
 
 TESTS
 
