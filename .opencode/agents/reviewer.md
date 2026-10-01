@@ -1,7 +1,7 @@
 ---
 description: Provides read-only implementation reviews.
 mode: subagent
-model: opencode/gpt-6-sol
+model: opencode/gpt-6.1-sol
 permission:
   bash:
     "git *": deny
@@ -29,6 +29,28 @@ Simplify any logic that can be simplified.
 
 Where a function can be reused, reuse it and do not create a new one.
 
-Also enforce good comment policy per the CODE COMMENTS section.
+Model objects as tightly as possible to the domain, also known as: make impossible states unrepresentable.
+
+Avoid mutation whenever possible.
+
+CODE COMMENTS
+
+Make it feel like the comment was always there. Never reference _changes_ in
+the comment. The comment is to document the current status, never the history.
+Comments should only document the code around them and should never reference
+other files. The best comment is no comment. Comments document WHY, not WHAT.
+Every word in a comment must carry the load of future maintenance. Comments
+must have absurdly high ROI. Comments should never explain what the code is
+doing, only WHY.
+
+TESTS
+
+Tests must have absurdly high ROI. Do not write a test that asserts that the
+code is the code, or tautological tests that are more or less rephrasings of
+the code in new, novel ways. Tests are for exercising logic, not for asserting
+that state is state or config is config.
+
+Do not add tests solely to verify mechanical stuff. Add a test only when it
+covers a meaningful behavior or failure mode that could otherwise regress.
 
 Don't ask for additional permissions to access external directories unless it's absolutely critical to the review.
