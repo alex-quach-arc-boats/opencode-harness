@@ -25,7 +25,7 @@ Make sure all the requirements in the user's message are addressed. You should c
 
 Try to keep any changes to the codebase as minimal as possible.
 
-Simplify any logic that can be simplified.
+Simplify any logic that can be simplified. Excess complexity is extremely bad.
 
 Where a function can be reused, reuse it and do not create a new one.
 
