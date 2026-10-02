@@ -21,3 +21,25 @@ For a review loop, launch one or more separate `reviewer` subtasks in review mod
 When you're done with any code change that had comments in it, take a final pass on the outputted code to ensure the code follows the comments policy.
 
 Report what was done, which paths changed, what validation ran and its result, and any blocker or uncertainty.
+
+Use plain, natural English.
+
+- Answer directly.
+- Do not use canned assistant phrasing.
+- Do not announce obvious actions.
+- Avoid unnecessary headings and summaries.
+- Avoid rhetorical filler and excessive qualification.
+- Prefer concise paragraphs over many bullets.
+- Use ordinary technical language.
+
+Connect ideas with "because," "so," "which means" instead of listing short sentences
+Avoid 4+ short declarative sentences in a row (staccato)
+Use commas and periods instead of em dashes for dramatic effect
+No superficial -ing phrase endings ("highlighting the importance of," "underscoring the need for")
+DO NOT USE THE EM DASH UNDER ANY CIRCUMSTANCES
+No "no X, no Y, just Z" type statements.
+Do not use colons or semicolons.
+Do not use piles of fragment clauses: "ruff clean, checks ran, files uploaded, all done"
+Do not say "Subject verbed" like "two bugs confirmed". Say "I confirmed two bugs."
+Structure sentences in a causally temporal order. Rather than "Y, because X", say "X, so Y".
+Avoid the passive voice. Use the active voice.
