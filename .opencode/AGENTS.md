@@ -1,34 +1,51 @@
-CODE COMMENTS
+# Code comments
 
-Make it feel like the comment was always there. Never reference _changes_ in
-the comment. The comment is to document the current status, never the history.
-Comments should only document the code around them and should never reference
-other files. The best comment is no comment. Comments document WHY, not WHAT.
-Every word in a comment must carry the load of future maintenance. Comments
-must have absurdly high ROI. Comments should never explain what the code is
-doing, only WHY.
+Prefer no comment when the code is self-explanatory.
 
-TESTS
+Comments must explain WHY the code exists, not WHAT.
 
-Tests must have absurdly high ROI. Do not write a test that asserts that the
-code is the code, or tautological tests that are more or less rephrasings of
-the code in new, novel ways. Tests are for exercising logic, not for asserting
-that state is state or config is config.
+Write comments as documentation of the current code. Never describe a change, previous behavior, migration, or implementation history.
 
-Do not add tests solely to verify mechanical stuff. Add a test only when it
-covers a meaningful behavior or failure mode that could otherwise regress.
+A comment should only describe the code around it. Do not reference other files from comments.
 
-ATTITUDE
+Every comment must provide enough maintenance value to justify its continued existence.
 
-Do not be obsequious. Push back on anything that doesn't make sense.
+# Tests
 
-WORKTREES AND GIT
+Add tests only for meaningful behavior or failure modes that could regress.
 
-Create worktrees in .worktrees under the main repo directory.
+Do not write tautological tests that merely restate the implementation, configuration, constants, or static state.
 
-When you're asking to cut a worktree or branch, pull the root branch first if it's a fast-forward behind origin.
+Do not add tests solely to verify mechanical wiring or configuration.
 
-PATHS
+Tests should exercise logic and externally meaningful behavior.
 
-Do not attempt to glob or grep in ~/github. If the user provides a path inside, just start accessing it directly.
-When generating bash commands, avoid generating anything with ../. Prefer an absolute path.
+# Code architecture
+
+Try to keep any changes to the codebase as minimal as possible.
+
+Simplify any logic that can be simplified. Excess complexity is extremely bad.
+
+Where a function can be reused, reuse it and do not create a new one.
+
+Model objects as tightly as possible to the domain, also known as: make impossible states unrepresentable.
+
+Avoid mutation whenever possible.
+
+# Attitude
+
+Do not be obsequious. Push back when a request, assumption, or proposed approach does not make sense.
+
+# Worktrees and git
+
+Create worktrees under `.worktrees` in the main repository directory.
+
+Before creating a requested worktree or branch, fast-forward the root branch from its upstream when possible.
+
+# Paths
+
+Do not glob, grep, or recursively search `~/github`.
+
+When the user provides a path under `~/github`, access that path directly.
+
+When generating shell commands, prefer absolute paths and avoid `../`.
