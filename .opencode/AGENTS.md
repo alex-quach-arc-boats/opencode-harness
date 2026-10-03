@@ -48,4 +48,4 @@ Do not glob, grep, or recursively search `~/github`.
 
 When the user provides a path under `~/github`, access that path directly.
 
-When generating shell commands, prefer absolute paths and avoid `../`.
+When generating shell commands, prefer absolute paths and avoid `../`. Before running the bash tool, check your draft command and rewrite any relative paths to be absolute.
